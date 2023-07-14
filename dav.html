@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="dav.js"></script>
+    </head>
+    <body onkeydown="remove_digits(event)" onload="show_random_digits()">
+        <div class="s2">
+            <input type="text" id="satauri" onkeydown="key_down(event)">
+            <input type="text" value="გვერდები"id="gverdebi">
+            <input type="text" value="ავტორი" id="avtori">
+            <input type="text" id="fasi">
+            <input type="text" value="ტირაჟი" id="tiraji">
+            <input type="submit" value="ძებნა" id="dzebna" onclick="dzieba()">
+            <div id="das"></div>
+            <input type="button" onclick="drawTable()">
+            <div class="container">
+                <div class="abc" id="abc"></div>
+            </div>
+        
+        </div>
+    </body>
+</html>

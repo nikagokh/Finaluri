@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="actiona.js"></script>
+        <style>
+            #moving {
+                background-color: aqua;
+                width: 150px;
+                height: 80px;
+            }
+            #diva {
+                width: 100%;
+                height: 300px;
+                border: 2px solid black;
+                
+            }
+            #davaleba1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            #txt {
+                width: 30%;
+            }
+            #timer {
+                width: 30%;
+            }
+            #clock {
+                width: 30%;
+            }
+        </style>
+    </head>
+    <body onload="startTime()">
+        <h1>დავალება1</h1>
+        <div id="davaleba1">
+        <div id="txt"></div>
+        <div id="timer">
+            
+            <input type="number" min="1" id="timm">
+            <input type="button" value="Timer" onclick="Timer()" id="butt">
+            <div id="timera"></div>
+        </div>
+        <div id="clockwork">
+            <div id="clock"></div>
+            <input type="button" value="ClockWork" onclick="ClockWork()">
+        </div>
+        </div>
+        <br>
+        <br>
+        <div id="diva" >
+            <div id="moving"></div>
+        </div>
+        <div id="movinga">
+            <input type="button" value="Up" onclick="Move(1)">
+            <input type="button" value="Down" onclick="Move(2)">
+            <input type="button" value="Left" onclick="Move(3)">
+            <input type="button" value="Right" onclick="Move(4)">
+            <input type="button" value="Up-Left" onclick="Move(5)">
+            <input type="button" value="Up-Right" onclick="Move(6)">
+            <input type="button" value="Down-Left" onclick="Move(7)">
+            <input type="button" value="Down-Right" onclick="Move(8)">
+        </div>
+    </body>
+</html>

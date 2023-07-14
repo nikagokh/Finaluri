@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="action.js"></script>
+    </head>
+    <body>
+        <h4>დავალება 1</h4>
+        <div class="s1">
+            <div class="col1">
+                <span>კვირის დღე: </span>
+                <input type="text" id="kvira">
+            </div>
+            <div class="col2">
+                <input type="submit" value="1" onclick="kv(1)">
+                <input type="submit" value="2" onclick="kv(2)">
+                <input type="submit" value="3" onclick="kv(3)">
+                <input type="submit" value="4" onclick="kv(4)">
+                <input type="submit" value="5" onclick="kv(5)">
+                <input type="submit" value="6" onclick="kv(6)">
+                <input type="submit" value="7" onclick="kv(7)">
+            </div>
+        </div>
+        <h4>დავალება 2</h1>
+        <br>
+        <div class="s2">
+            <form name="formm">
+                <input type="text" id="calc" name="answer"> <br> <br>
+
+                <input type = "button" value = "1" onclick = "formm.answer.value += '1' ">  
+                <input type = "button" value = "2" onclick = "formm.answer.value += '2' ">  
+                <input type = "button" value = "3" onclick = "formm.answer.value += '3' ">  
+                <input type = "button" value = "+" onclick = "formm.answer.value += '+' " id="blue">
+
+                <input type = "button" value = "4" onclick = "formm.answer.value += '4' ">  
+                <input type = "button" value = "5" onclick = "formm.answer.value += '5' ">  
+                <input type = "button" value = "6" onclick = "formm.answer.value += '6' ">  
+                 <input type = "button" value = "-" onclick = "formm.answer.value += '-' " id="blue">
+
+                 <input type = "button" value = "7" onclick = "formm.answer.value += '7' ">  
+                 <input type = "button" value = "8" onclick = "formm.answer.value += '8' ">  
+                 <input type = "button" value = "9" onclick = "formm.answer.value += '9' ">  
+                  <input type = "button" value = "*" onclick = "formm.answer.value += '*' " id="blue">
+
+                  <input type = "button" value = "/" onclick = "formm.answer.value += '/' ">  
+                  <input type = "button" value = "0" onclick = "formm.answer.value += '0' ">  
+                  <input type = "button" value = "." onclick = "formm.answer.value += '.' ">  
+                   <input type = "button" value = "AC" onclick = "formm.answer.value = '' " id="blue">
+                  
+                   <input type = "button" value = "Square " onclick = xarisxi() id="green">  
+                 <input type = "button" value = "Square Root" onclick = fesvi() id="green">  
+                   <input type = "button" value = "DEL" onclick="washla()" id="green">  
+                    <input type = "button" value = "=" onclick = "formm.answer.value = eval(formm.answer.value)" id="eq">
+            </form>
+        </div>
+        <h4>დავალება 3</h4>
+        <div class="s3"> 
+            <span>რამდენია </span>
+            <input type="text" id="ricxvi">
+            <span>-ის</span>
+            <input type="text" id="procenti">
+            <span> % ?</span>
+            <input type="button" value="გამოთვლა" onclick="gamotvla()">
+            <input type="text" id="gamotvla">
+        </div>
+        
+        <h4>დავალება 5</h4>
+        <div class="s5" id="s5">
+            <input type="button" value="Randomizer" onclick="randomizer()" id="ocbutton">
+            <div class="ocdaati" id="ocdaati">
+                
+            </div>
+        </div>
+        <h4>დავალება 6</h5>
+        <div class="s6" id="s6">
+            <div class="container">
+                <span>MIN</span>
+                <input type="text" id="min">
+                <span>MAX</span>
+                <input type="text" id="max">
+                <input type="button" value="Randomizer" onclick="randomizera()" id="ocbutton">
+            </div>
+            <div class="ocdaatii" id="ocdaatii">
+
+            </div>
+        </div>
+        <h4>დავალება 7</h4>
+        <div class="s7">
+            <div class="container1">
+                <span>row</span>
+                <input type="text" id="row">
+                <span>col</span>
+                <input type="text" id="col">
+                <span>Number</span>
+                <input type="text" id="number"> 
+                <input type="button" value="Randomizer" onclick="ImageGenerator()">
+            </div>
+            <table id="randTable">
+
+            </table>
+        </div>
+    </body>
+</html>
